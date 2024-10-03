@@ -53,6 +53,11 @@ p {
   font-weight: 300;
 }
 
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
 .container__card {
   width: 335px;
   height: 585px;

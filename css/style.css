@@ -1,0 +1,104 @@
+/* inter-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/inter-v18-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/inter-v18-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/inter-v18-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-700: hsl(0, 0%, 20%);
+  --color-grey-800: hsl(0, 0%, 12%);
+  --color-grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  background-color: var(--color-grey-900);
+  color: var(--color-white);
+}
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.container__card {
+  width: 335px;
+  height: 585px;
+  background-color: var(--color-grey-800);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.container__card img {
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.info {
+  font-weight: 600;
+  color: var(--color-green);
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+.description {
+  margin-block: 24px;
+  -webkit-margin-collapse: collapse;
+}
+
+.card__box div {
+  width: 295px;
+  height: 48px;
+  background-color: var(--color-grey-700);
+  font-weight: 600;
+  text-align: center;
+  border-radius: 8px;
+  line-height: 50px;
+  margin-bottom: 16px;
+}
+
+.card__box div:hover {
+  background-color: var(--color-green);
+  color: var(--color-grey-900);
+}
+
+@media (width >= 75em) {
+  .container__card {
+    padding: 10px;
+  }
+}
